@@ -4,18 +4,18 @@
 	padding: 0;
 	outline: none;
 }
-header, footer {
-    width: 98%: 
-    background-color: #fff;
-} 
 
 header {
+	width: 98%: 
+    background-color: #fff;
 	background: black;
 	border-bottom: 2px solid silver;
 	padding: 1%;
 	 
 }
-html {height: 100%}
+html {height: 100%
+}
+
 body {
 	width: 100%;
 	height: 100%;
@@ -51,13 +51,7 @@ img {
 	height: auto;
 	width auto\9;
 }
-hr {
-	display: block;
-	border: 0;
-	height: 1px;
-	border-top: 1px solid #ccc;
-	padding: 0;
-}
+
 
 .right {
 	float: right 
@@ -74,19 +68,19 @@ hr {
 	font-size: 100%;	 
 }
 
-.head_menu {  
+.main_navigation_menu {  
 	font-size: 100%;
 	font-family: Comic Sans MS, sans-serif;
 	padding: 10px; 
 }
-.head_menu_right {     
+.autorization_menu {     
 	font-size: 100%;
 	font-family: Comic Sans MS, sans-serif; 
 	float: right;
 	padding: 5px;
 }
 
-.head_menu_right_stick {     
+.head_menu_stick {     
 	font-size: 100%;
 	font-family: Comic Sans MS, sans-serif; 
 	float: right;
@@ -106,7 +100,7 @@ a.blogs {
 	color:#62EDC7;
 }
 
-.second_menu_buttoms{
+.blogs_navigation{
 	padding: 5px;
 	font-weight: bold;
 	color:#4C5250;
@@ -183,21 +177,70 @@ a.blogs {
 }
 
 /* стили для футера */
-
-footer{
-	padding: 1%;
-	border-top: 2px solid silver;
-	margin-top: 150%;
-	padding-bottom: 2%;
+.down_botton {
+	margin-top: -10%;
+	width: 210px;
+	height: 55px;
+	background: #20B2AA; /* Цвет фона */
+	color: #fff; /* Цвет текста */
+	border-radius: 40px; /* Уголки */
+	font-size: 100%;
+	font-family: Comic Sans MS, sans-serif;
+	padding: 5px;
 }
 
-#page_links: after{
+#footer_block {
+	height: 300px;
+	padding: 2% 0;
+	width: 100%; 
+	border-bottom: 2px solid silver;
+	border-top: 2px solid silver;
+	margin: 20px 0;
+}
+#e-mail {
+    margin: 0;
+    height: 280px;
+    width: 100%;
+    background-image: url(https://picsum.photos/5472/3648?image=1074);
+}
+
+#footer_block_in {
+	line-height: 25px;
+	text-align: center;
+	padding: 1%;
+	height: 200px;
+	border-radius: 7px;
+	width: 500px;
+}
+
+footer{
+	/*border-top: 2px solid silver;*/
+	margin-top: 4280px;
+	padding-bottom: 3%;
+}
+
+
+#page-wrap: after{
 	content: "";
 	display: block;
 }
+ 
+form {
+	width: 100%
+} 
 
-footer, #page_links:after {height: 10px}
- #page_links {
-	min-height: 100%;
+form input {
+	margin-bottom: 15px;
+ 	width: 80%;
+    padding: 10px;
+    margin-left: -12px;
+}
+
+footer, #page-wrap:after {
+	height: 100px
+}
+ 
+#page-wrap {
+	min-height: 4000px
 	margin-bottom: -5%;
 }
