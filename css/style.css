@@ -6,14 +6,18 @@
 }
 
 header {
-	width: 98%: 
-    background-color: #fff;
+	width: 100%: 
+    margin-top: -10px;
+	margin-left: 19%;
+	margin-right: 17%;
 	background: black;
-	border-bottom: 2px solid silver;
-	padding: 1%;
+	/*border-bottom: 2px solid silver; */
+	padding: 0%;
 	 
 }
-html {height: 100%
+
+html {
+	height: 100%	
 }
 
 body {
@@ -25,6 +29,7 @@ body {
 	font-family: "Segoe UI", sans-serif;
 	line-height: 100%;
 }
+
 a {
 
 	color: #ffffff;
@@ -41,7 +46,7 @@ a:hover {
 	-moz-transition: all.6s ease;
 }
 
-a:active{
+a:active {
 	color: blue;
 }
     ::selection {background: #62EDC7; color: #62EDC7}
@@ -52,7 +57,6 @@ img {
 	width auto\9;
 }
 
-
 .right {
 	float: right 
 }
@@ -60,36 +64,46 @@ img {
 .left {
 	float: left 
 }
+
 .clear {
 	clear: both 
 }
+
+.head {
+	height: 35px;
+	background: black;
+	
+	padding: 1%;
+}
+
+.body {
+	margin-left: 14.5%;
+	margin-right: 15.5%;
+	height: 35px;
+	background: #f7f7f7;
+	
+	padding: 1%;
+}
+
 #logo { 
 	margin-left:1%;
 	font-size: 100%;	 
 }
 
-.main_navigation_menu {  
+.main_navigation_menu { 
 	font-size: 100%;
 	font-family: Comic Sans MS, sans-serif;
-	padding: 10px; 
+	padding: 15px; 
 }
+
 .autorization_menu {     
 	font-size: 100%;
 	font-family: Comic Sans MS, sans-serif; 
 	float: right;
-	padding: 5px;
+	padding: 10px;
 }
 
-.head_menu_stick {     
-	font-size: 100%;
-	font-family: Comic Sans MS, sans-serif; 
-	float: right;
-	padding: 5px;
-	color: #ffffff;
-}
-
-.mel
-{   
+.mel {   
 	font-weight: bold;
 	font-size: 3em;	 
 }
@@ -121,13 +135,6 @@ a.blogs {
 	color: #FE4444;
 	font-size: 1em;
 	font-weight: bold;
-}
-
-#menu_hrefs a {
-	border-radius: 4px;
-	margin-right: 2.5%;
-	margin-left: 1%; 
-	color: black;
 }
 
 #menu_hrefs a:hover {
@@ -190,11 +197,11 @@ a.blogs {
 }
 
 #footer_block {
-	height: 300px;
+	height: 180px;
 	padding: 2% 0;
 	width: 100%; 
-	border-bottom: 2px solid silver;
-	border-top: 2px solid silver;
+	/*border-bottom: 2px solid silver;
+	border-top: 2px solid silver;*/
 	margin: 20px 0;
 }
 #e-mail {
@@ -214,15 +221,22 @@ a.blogs {
 }
 
 footer{
+	width: 100%;
+	margin-top: 4220px;
+	padding: 0%;
 	/*border-top: 2px solid silver;*/
-	margin-top: 4280px;
-	padding-bottom: 3%;
+	padding-bottom: 2%;
 }
 
-
-#page-wrap: after{
+#page_links: after{
 	content: "";
 	display: block;
+}
+
+footer, #page_links:after {height: 650px}
+ #page_links {
+	min-height: 4220px;
+	margin-bottom: -5%;
 }
  
 form {
@@ -236,11 +250,84 @@ form input {
     margin-left: -12px;
 }
 
-footer, #page-wrap:after {
-	height: 100px
+.footer_down {
+	height: 380px;
+	background-color: #2E2E2E;
+
 }
- 
-#page-wrap {
-	min-height: 4000px
-	margin-bottom: -5%;
+
+.menu_hrefs_footer {
+
+	text-align: center;
+	border-radius: 4px;
+	margin-right: 0%;
+	margin-left: 0%;
+
+}
+
+#footerblock_down_in {
+	line-height: 100px;
+	text-align: center;
+	padding: 1%;
+	height: 100px;
+	width: 98%;
+	color: #fff;
+}
+
+.main_navigation_menu_down{
+	padding: 5px;
+	font-weight: bold;
+	color: white;
+	font-size: 0.9em;
+	opacity: 0.8;
+	margin-right: 0px;
+	margin-left: 0px;
+}
+
+.links_down_menu {
+
+	margin-top: -25px;
+	margin-left: -55px;
+	text-align: center;
+	padding: 1%;
+	height: 100px;
+	font-size: 0.88em;
+	font-family: "Segoe UI", sans-serif;
+	width: 100%;
+	color: #808080;
+	opacity: 0.5;
+	line-height: 25px;
+}
+
+a.links_blogs {	
+	padding: 20px;
+	font-weight: bold;
+	color:#62EDC7;
+}
+
+.footer_icons{
+	margin-top: -30px;
+	font-size: 2.1em;
+}
+
+.footer_icons_networks {     
+	font-size: 100%;
+	font-family: Comic Sans MS, sans-serif; 
+	float: center;
+	padding: 15px;
+	color: white;
+}
+
+.mel_copirait{
+	margin-top: -30px;
+	font-size: 0.9em;
+}
+
+.mel_copirait_znak{
+	border-bottom: 2px solid silver;
+	border-top: 2px solid silver;
+	margin-top: -30px;
+	font: 14px/24px roboto-regular,Arial,sans-serif;
+	display: inline-block;
+	color: #fff;
 }
