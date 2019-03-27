@@ -6,25 +6,22 @@
 }
 
 header {
-    width: 100%: 
-    margin-top: -10px;
+    width: 100%; 
     margin-left: 19%;
     margin-right: 17%;
     background: black;
-    /*border-bottom: 2px solid silver; */
-    padding: 0%;
-     
+    padding: 0%; 
 }
 
 html {
-    height: 100%    
+    height: 100%;    
 }
 
 body {
     width: 100%;
     height: 100%;
     color: #333;
-    background: #f7f7f7;
+    background: #e2e2e2;
     font-size: 1em;
     font-family: "Segoe UI", sans-serif;
     line-height: 100%;
@@ -69,34 +66,35 @@ img {
     clear: both 
 }
 
-.head {
+.head{
+    display: flex;
     height: 35px;
     background: black;
-    
-    padding: 1%;
+    padding: 1%; 
 }
 
 .body {
-    margin-left: 14.5%;
-    margin-right: 15.5%;
+    margin-left: 11.5%;
+    margin-right: 11.5%;
     height: 35px;
-    background: #f7f7f7;
-    
+    background: #e2e2e2;
     padding: 1%;
 }
 
 #logo { 
-    margin-left:1%;
+    margin-left:-40px;
     font-size: 100%;     
 }
 
-.main_navigation_menu { 
+.main_navigation_menu {
+    flex-direction: column;
     font-size: 100%;
     font-family: Comic Sans MS, sans-serif;
     padding: 15px; 
 }
 
-.autorization_menu {     
+.autorization_menu { 
+    flex-direction: row;
     font-size: 100%;
     font-family: Comic Sans MS, sans-serif; 
     float: right;
@@ -107,25 +105,39 @@ img {
     font-weight: bold;
     font-size: 3em;  
 }
+#menu_hrefs  {
+    display: flex;
+    background-color: #F44747;
+}
 
 a.blogs {   
     padding: 20px;
     font-weight: bold;
     color:#62EDC7;
 }
+.blogs_navigation_otstup{
+    margin-top: 17px;
+    height: 34px;
+    margin-left: 80px;
+}
 
 .blogs_navigation{
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 5px;
     font-weight: bold;
     color:#4C5250;
     margin-right: 0px;
-    margin-left:  0px;
+    
 }
 
 .cards_text {
     display: table-cell; 
     text-align:center;
-    font-size: 1.2em;
+    font-size: 17px;
+    font-family: Proxima,sans-serif;
+    font-weight: 700;
+    line-height: 30px;
     font-weight: bold;
     color: #000000;
 }
@@ -134,20 +146,27 @@ a.blogs {
     margin: 40%;
     color: #FE4444;
     font-size: 1em;
+    line-height: 30px;
     font-weight: bold;
 }
-
-#menu_hrefs a:hover {
-    background-color: #F44747;
+.cards_comments{
+    margin: 35%;
+    margin-top: 130px;
+    color: #969696;
+    font-family: Proxima,sans-serif;
+    font-size: 0.7em;
+    line-height: 90px;
+    font-weight: bold;
 }
 
 /* Основные стили для сайта */
 
 #wrapper {
-    float: left;
+    display: flex;
     width: 100%;
     margin-top: 20px;
     margin-bottom: 10px;
+    line-height: 20px;
 }
 
 #wrapper #articles {     
@@ -156,10 +175,10 @@ a.blogs {
 }
 
 #wrapper #articles article {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     float: left;
     width: 22%;
-    border: 1px solid silver;
+    border: 1px white;
     box-sizing: border-box;
     border-radius: 5px;
     background-color: #fafafa;
@@ -176,18 +195,21 @@ a.blogs {
     margin-bottom: 10px;
 }
 
-#wrapper #articles article h2{
-    width: 90%;
-    margin-left: 5%;
-    font-weight: normal;
-    font-size: 1.7em;
+/* стили для футера */
+
+footer{
+    width: 100%;
+    margin-top: 4295px;
+    padding: 0%;
+    text-align: center;
+    padding-bottom: 2%;
 }
 
-/* стили для футера */
-.down_botton {
-    margin-top: -10%;
+.botton_network {
     width: 210px;
-    height: 55px;
+    height: 48px;
+    float: center;
+    margin-top: 20px;
     background: #20B2AA; /* Цвет фона */
     color: #fff; /* Цвет текста */
     border-radius: 40px; /* Уголки */
@@ -197,13 +219,14 @@ a.blogs {
 }
 
 #footer_block {
+    display: flex;
     height: 180px;
     padding: 2% 0;
-    width: 100%; 
-    /*border-bottom: 2px solid silver;
-    border-top: 2px solid silver;*/
+    align-content: center;
+    width: 100%;
     margin: 20px 0;
 }
+
 #e-mail {
     margin: 0;
     height: 280px;
@@ -212,30 +235,18 @@ a.blogs {
 }
 
 #footer_block_in {
+    margin-left: 650px;
+    width: 500px;
+    justify-content: center;
     line-height: 25px;
     text-align: center;
+    color: white;
     padding: 1%;
     height: 200px;
-    border-radius: 7px;
-    width: 500px;
 }
 
-footer{
-    width: 100%;
-    margin-top: 4220px;
-    padding: 0%;
-    /*border-top: 2px solid silver;*/
-    padding-bottom: 2%;
-}
-
-#page_links: after{
-    content: "";
-    display: block;
-}
-
-footer, #page_links:after {height: 650px}
- #page_links {
-    min-height: 4220px;
+footer, #page_links {
+    height: 650px;
     margin-bottom: -5%;
 }
  
@@ -251,6 +262,7 @@ form input {
 }
 
 .footer_down {
+    display: flex;
     height: 380px;
     background-color: #2E2E2E;
 
@@ -262,7 +274,6 @@ form input {
     border-radius: 4px;
     margin-right: 0%;
     margin-left: 0%;
-
 }
 
 #footerblock_down_in {
@@ -274,8 +285,8 @@ form input {
     color: #fff;
 }
 
-.main_navigation_menu_down{
-    padding: 5px;
+.main_navigation_menu_footer{
+    padding: 12px;
     font-weight: bold;
     color: white;
     font-size: 0.9em;
@@ -284,11 +295,10 @@ form input {
     margin-left: 0px;
 }
 
-.links_down_menu {
+.links_menu_footer {
 
     margin-top: -25px;
     margin-left: -55px;
-    text-align: center;
     padding: 1%;
     height: 100px;
     font-size: 0.88em;
@@ -297,6 +307,10 @@ form input {
     color: #808080;
     opacity: 0.5;
     line-height: 25px;
+}
+.links_menu_footer_otstup{
+    
+    padding: 5px;
 }
 
 a.links_blogs { 
