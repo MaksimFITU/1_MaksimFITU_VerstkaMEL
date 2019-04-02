@@ -72,13 +72,13 @@ button{
     clear: both 
 }
 
-.head{
+.menu{
     height: 30px;
     background: black;
     padding: 1%; 
 }
 
-.body {
+.content {
     margin-left: 11.5%;
     margin-right: 11.5%;
     height: 35px;
